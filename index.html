@@ -1,0 +1,43 @@
+   <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+    </head>
+    <body>
+        <img src="assets/img/micky.jfif" alt="" class="player__background">
+        <audio class='audio' src="assets/audio/Micky - This Is The Life.mp3" controls></audio>
+        <div class="page">
+            
+            <div class="player">
+                <div class="wrapper">
+                    <div class="player__audio">
+                        <img class="player__pic" src="assets/img/micky.jfif">
+                        <div class="player__box">
+                            <div class="player__play-btn" onclick="toggleBtn()">
+                            <img class="player__play" onclick="toggleBtn()" src="assets/svg/play.png" alt="">
+                            <img class="player__pause" onclick="toggleBtn()" src="assets/svg/pause.png" alt="">
+                            </div>
+                            <div class="player__now">
+                                <p class="player__artist-name">Micky</p>
+                                <p class="player__song-title">This Is The Life</p>
+                                <input type="range" class="player__bar" min="1" max="100" value="0" >
+                                <p class="player__current-time"></p>
+                                <p class="player__duration-time"></p>
+                            </div>
+                            <div class="player__control-buttons">
+                                <img class="player__next" src="assets/svg/forward.png">
+                                <img class="player__prev" src="assets/svg/backward.png">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>

@@ -58,7 +58,6 @@ function loadAudio() {
     songTitle.textContent = title[playNum];
     audio.addEventListener('ended', playNext);
     updateTimer = setInterval(setUpdate, 100);
-    
 }
 
 function toggleBtn() {
@@ -128,8 +127,6 @@ function setUpdate() {
         durationTime.textContent = durationMin + ":" + durationSec;
     }
 }
-
-
 
 function startFrom() {
     audio.currentTime = audio.duration * (bar.value / 100);
